@@ -12,7 +12,7 @@ int secondlar(vector<int>& nums){
             secondLargest = nums[i];
         }
     }
-    return secondLargest;
+    return (secondLargest == INT_MIN) ? -1 : secondLargest;
 }
 
 int main(){
